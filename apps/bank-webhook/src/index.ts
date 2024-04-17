@@ -53,3 +53,9 @@ app.post("/hdfcWebhook", async (req, res) => {
 })
 
 app.listen(3003);
+
+app.get("/", (req,res) => {
+    res.json({
+        message: "server is working"
+    })
+})
